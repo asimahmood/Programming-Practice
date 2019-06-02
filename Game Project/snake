@@ -1,0 +1,189 @@
+from Tkinter import * # Importing the Tkinter interface
+from random import randrange
+
+
+# Computing the fonction that manages the snake's moves
+def move():
+        global c1,c2,z,y,sq1,sq2,score,snake,j,m
+        l=len(snake)
+        l=l-1
+        # Each square takes the coordinate of the previous one from the list (snake)
+        while l!=0 :
+                sq1[l]=sq1[l-1]
+                sq2[l]=sq2[l-1]
+                l+=-1
+        # Changing the coordinates of the first square
+        sq1[0] += c1
+        sq2[0] += c2
+        l=0
+        # Applying the new coordinates to the correspondant squares
+        while l!=len(snake):
+                can.coords(snake[l],sq1[l],sq2[l],sq1[l]+10,sq2[l]+10)
+                l+=1
+        l=1
+        # If the coordinates of the first square are equal to that of another, the game will stop :(
+        while l!=len(snake):
+                if sq1[l]==sq1[0] and sq2[l]==sq2[0]:
+                        j=1
+                        score = 'Unfortunately, you lost with  ' + str(score*10)
+                        scores.set(score)
+                        break
+                l+=1
+        # If the snake enters from one side of the screen, it emerges from the other
+        # The 'b' value is used to prevent a bug stoping the transfer of the snake on the other side of the canvevas
+        b=1
+        if sq1[0]==200:
+                sq1[0],b=10,0
+        if sq1[0]==0 and b==1:
+                sq1[0]=200
+        if sq2[0]==200:
+                sq2[0],b=10,0
+        if sq2[0]==0 and b==1:
+                sq2[0]=200
+        b=0
+        # If the head square intersects the circle, the score increases and a new circle appears randomly
+        if z-7<=sq1[0]<=z+7 and y-7<=sq2[0]<=y+7:
+                score+=1
+                scores.set(str(score*10))
+                beast()
+        if j!=1 and m!=1:
+                fen.after(100,move)
+
+# Function creating a circle with a multiple coordinate of 10 to prevent the circle from being partially cut by the snake
+
+def beast():
+        global z,y,n,sq1,sq2,snake,c1,b
+        z=randrange(2,18)
+        y=randrange(2,18)
+        z = z*10
+        y = y*10
+        can.coords(cercle,z,y,z+5,y+5)
+        # We add a square out of the canvas (to lighten the code) which will be added later
+        snakes = can.create_rectangle(300,300,310,310,fill='#800080')
+        snake.append(snakes)
+        sq1.append(sq1[n]+12+c1)
+        sq2.append(sq2[n]+12+b)
+        n+=1
+
+def left(event):
+        global c1,c2,s
+        c1=-10
+        c2=0
+        if s==0:
+                s=1
+                move()
+
+def right(event):
+        global c1,c2,s
+        c1=10
+        c2=0
+        if s==0:
+                s=1
+                move()
+        
+def up(event):
+        global c1,c2,s
+        c1=0
+        c2=-10
+        if s==0:
+                s=1
+                move()
+
+        
+def down(event):
+        global c1,c2,s
+        c1=0
+        c2=10
+        if s==0:
+                s=1
+                move()
+
+
+# Fonction allowing the snake to stop
+                
+def pause(event):
+        global j,c1,b,m,inpause
+        t=0
+        if c1==b:
+                t=1
+        if j!=1:
+                # Display or Delete the text 'PAUSE' and stopping the snake
+                if m!=1:
+                        m=1
+                        can.coords(inpause,100,100)
+                else:
+                        m=0
+                        can.coords(inpause,300,300)
+                        if t!=1:
+                                move()
+
+# Function reseting all values and recreating snake as well as the first meal
+
+def restart(event):
+        global z,y,sq1,sq2,score,snake,j,m,s,n,c1,b,cercle
+        if j!=1:
+                print 'Suicide is punished'
+        can.delete(ALL)
+        s=score=j=m=c1=b=0
+        z=y=50
+        sq1,sq2,snake = [100,112],[100,112],[]
+        n=1
+        head = can.create_rectangle(100,100,110,110,fill='#efb7b7')
+        square = can.create_rectangle(112,100,122,110,fill='#800080')
+        cercle = can.create_oval(z,y,z+5,y+5,fill='#c1cdcd')
+        snake.append(head)
+        snake.append(square)
+        scores.set('0')
+
+
+# Defining the initial values
+
+s=score=j=m=t=c1=b=0
+z=y=70
+sq1,sq2,snake = [100,112],[100,112],[]
+n=1
+
+
+print ' '*35 + 'Use arrows to move the snake'
+print ' '*35 + 'Press P to set/remove the pause'
+print ' '*35 + 'Press Enter to restart, beware of suicide !'
+
+
+
+# Creating a canvas
+
+fen = Tk()
+can = Canvas(fen,width = 400, height = 400, bg = '#777183')
+can.grid(row=1,column=0,columnspan=3)
+
+inpause=can.create_text(350,350,text="Press P to PAUSE")
+
+# Create the scan and the first food
+
+head = can.create_rectangle(100,100,110,110,fill='#efb7b7')
+
+square = can.create_rectangle(112,100,122,110,fill='#800080')
+cercle = can.create_oval(z,y,z+5,y+5,fill='#c1cdcd')
+
+snake.append(head)
+snake.append(square)
+
+# Creating the keyboard commands
+
+can.bind_all('<Up>', up)
+can.bind_all('<Down>', down)
+can.bind_all('<Left>', left)
+can.bind_all('<Right>', right)
+can.bind_all('<Return>', restart)
+can.bind_all('p', pause)
+
+# Displaying the score
+
+Label(fen, text='Score:  ').grid(row=0,column=0)
+
+scores = StringVar()
+Score = Entry(fen, textvariable=scores)
+Score.grid(row=0,column=1)
+scores.set('0')
+
+fen.mainloop()
