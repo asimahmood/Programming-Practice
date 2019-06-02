@@ -1,0 +1,2650 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+E       NameError: name 'sqrt' is not defined
+
+test_student.py:25: NameError
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+E       NameError: name 'sqrt' is not defined
+
+test_student.py:29: NameError
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.505 < 0.0001
+E        +  where 4.505 = abs((2.998 - 7.503))
+E        +    where 2.998 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.04002 < 0.0001
+E        +  where 6061.04002 = abs((12122.083 - 6061.04298))
+E        +    where 12122.083 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+E       NameError: name 'sqrt' is not defined
+
+test_student.py:42: NameError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+>       v, out = capture_output(sqrt)(36, 6.0)
+E       NameError: name 'sqrt' is not defined
+
+test_student.py:47: NameError
+========================== 6 failed in 0.73 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a03 import sqrt
+a03.py:26: in <module>
+    sqrt(4, 0)
+a03.py:24: in sqrt
+    new_guess = improve_guess(g, n)
+E   NameError: name 'improve_guess' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 1.80 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a03 import sqrt
+a03.py:26: in <module>
+    sqrt(4, 0)
+a03.py:24: in sqrt
+    new_guess = improve_guess(g, n)
+E   NameError: name 'improve_guess' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 1.30 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+test_student.py:2: in <module>
+    from a03 import sqrt
+a03.py:26: in <module>
+    sqrt(4, 0)
+a03.py:24: in sqrt
+    new_guess = improve_guess(g, n)
+E   NameError: name 'improve_guess' is not defined
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 1.43 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.404999999999999 < 0.0001
+E        +  where 4.404999999999999 = abs((3.0980000000000003 - 7.503))
+E        +    where 3.0980000000000003 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.140020000001 < 0.0001
+E        +  where 6061.140020000001 = abs((12122.183 - 6061.04298))
+E        +    where 12122.183 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+
+test_student.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_student.py:56: in wrapper
+    v = fn(*args, **kwargs)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001C19E397AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001C19E397AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001C1A278FAB0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001C1A278FAB0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001C1A051D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001C1A051D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+========================== 6 failed in 1.10 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.404999999999999 < 0.0001
+E        +  where 4.404999999999999 = abs((3.0980000000000003 - 7.503))
+E        +    where 3.0980000000000003 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.140020000001 < 0.0001
+E        +  where 6061.140020000001 = abs((12122.183 - 6061.04298))
+E        +    where 12122.183 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+
+test_student.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_student.py:56: in wrapper
+    v = fn(*args, **kwargs)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+a03.py:25: in sqrt
+    return sqrt(n, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000207DF3D7AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000207DF3D7AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000207E37FFAB0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000207E37FFAB0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000207E157D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000207E157D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+========================== 6 failed in 1.53 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.404999999999999 < 0.0001
+E        +  where 4.404999999999999 = abs((3.0980000000000003 - 7.503))
+E        +    where 3.0980000000000003 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.140020000001 < 0.0001
+E        +  where 6061.140020000001 = abs((12122.183 - 6061.04298))
+E        +    where 12122.183 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+
+test_student.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_student.py:56: in wrapper
+    v = fn(*args, **kwargs)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001ADA1857AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001ADA1857AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001ADA416EAB0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001ADA416EAB0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001ADA1EED048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001ADA1EED048> = base64.b64decode
+
+test_student.py:48: AssertionError
+========================== 6 failed in 1.01 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.404999999999999 < 0.0001
+E        +  where 4.404999999999999 = abs((3.0980000000000003 - 7.503))
+E        +    where 3.0980000000000003 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.140020000001 < 0.0001
+E        +  where 6061.140020000001 = abs((12122.183 - 6061.04298))
+E        +    where 12122.183 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+
+test_student.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_student.py:56: in wrapper
+    v = fn(*args, **kwargs)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001FE2B377AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001FE2B377AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001FE2F89FAB0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001FE2F89FAB0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001FE2D62D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001FE2D62D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+========================== 6 failed in 1.02 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.504989999999999 < 0.0001
+E        +  where 4.504989999999999 = abs((2.9980100000000003 - 7.503))
+E        +    where 2.9980100000000003 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.04003 < 0.0001
+E        +  where 6061.04003 = abs((12122.08301 - 6061.04298))
+E        +    where 12122.08301 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+
+test_student.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_student.py:56: in wrapper
+    v = fn(*args, **kwargs)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001FB7A097AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001FB7A097AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001FB7C9CFAB0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001FB7C9CFAB0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001FB7A74D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001FB7A74D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+========================== 6 failed in 0.62 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+______________________________ test_sqrt_int_s1 _______________________________
+
+    def test_sqrt_int_s1():
+        v = 283748324.2394
+>       assert abs(sqrt(v, 1.0) - 16844.83078) < epsilon
+
+test_student.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 4.504989999999999 < 0.0001
+E        +  where 4.504989999999999 = abs((2.9980100000000003 - 7.503))
+E        +    where 2.9980100000000003 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 6061.04003 < 0.0001
+E        +  where 6061.04003 = abs((12122.08301 - 6061.04298))
+E        +    where 12122.08301 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+>       v, out = capture_output(sqrt)(36, 1.0)
+
+test_student.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test_student.py:56: in wrapper
+    v = fn(*args, **kwargs)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+a03.py:26: in sqrt
+    return sqrt(x, new_guess)
+E   RecursionError: maximum recursion depth exceeded in comparison
+!!! Recursion detected (same locals & position)
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001D365607AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001D365607AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001D369A30AB0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001D369A30AB0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001D3677AD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001D3677AD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+========================== 6 failed in 0.70 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001D7B9697AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001D7B9697AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001D7B9697AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001D7B9697AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001D7BBFA03F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001D7BBFA03F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001D7B9D1D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001D7B9D1D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 1.10 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002835CEC7AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000002835CEC7AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002835CEC7AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000002835CEC7AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000002835F7FFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000002835F7FFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002835D57D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002835D57D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001926C027AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001926C027AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001926C027AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001926C027AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001927061E3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001927061E3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001926E39D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001926E39D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001C0A8837AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001C0A8837AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001C0A8837AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001C0A8837AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001C0AB14FB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001C0AB14FB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001C0A8ECD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001C0A8ECD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.31 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000242B0677AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000242B0677AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000242B0677AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000242B0677AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000242B4A9FBA0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000242B4A9FBA0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000242B281D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000242B281D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.16 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000025E36477AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000025E36477AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000025E36477AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000025E36477AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000025E3A99F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000025E3A99F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000025E3871D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000025E3871D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001200A4D2EB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001200A4D2EB0> = 'Took: 33 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001200A4D2070>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001200A4D2070> = 'Took: 33 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001200A46FB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001200A46FB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000120081ED048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000120081ED048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000027A29222EB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000027A29222EB0> = 'Took: 33 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000027A29222230>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000027A29222230> = 'Took: 33 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000027A291BEB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000027A291BEB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000027A26F3D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000027A26F3D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.10 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000023F34F4EF70>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000023F34F4EF70> = 'Took: 34 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000023F34F4E5B0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000023F34F4E5B0> = 'Took: 34 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000023F34EEEB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000023F34EEEB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000023F32C6D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000023F32C6D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001F65F072EB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001F65F072EB0> = 'Took: 34 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001F65F072070>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001F65F072070> = 'Took: 34 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001F65F00FB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001F65F00FB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001F65CD8D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001F65CD8D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001CAFE255DF0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001CAFE255DF0> = 'Took: 34 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001CAFE2550B0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001CAFE2550B0> = 'Took: 34 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001CAFE1EFBA0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001CAFE1EFBA0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001CAFBF6D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001CAFBF6D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000219A85ECE40>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000219A85ECE40> = 'Took: 16.5 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000219A85DAD20>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000219A85DAD20> = 'Took: 16.5 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000219A858FB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000219A858FB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000219A630D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000219A630D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002158C67BFA8>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000002158C67BFA8> = 'Took: 16.5 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002158C669540>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000002158C669540> = 'Took: 16.5 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000002158C61F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000002158C61F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002158A39D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002158A39D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000016B1AC25DF0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000016B1AC25DF0> = 'Took: 16 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000016B1AC250B0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000016B1AC250B0> = 'Took: 16 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000016B1ABBEB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000016B1ABBEB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000016B1893D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000016B1893D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000241D3AA5E30>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000241D3AA5E30> = 'Took: 17 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000241D3AA50F0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000241D3AA50F0> = 'Took: 17 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000241D3A3FB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000241D3A3FB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000241D17BD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000241D17BD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000013CA1F22E70>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000013CA1F22E70> = 'Took: 15 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000013CA1F22030>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000013CA1F22030> = 'Took: 15 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000013CA1EBFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000013CA1EBFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000013C9FC3D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000013C9FC3D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001ED30194E30>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001ED30194E30> = 'Took: 15 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001ED30194130>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001ED30194130> = 'Took: 15 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001ED3012F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001ED3012F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001ED2DEBD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001ED2DEBD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.10 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002308C742EB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000002308C742EB0> = 'Took: 15 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002308C742070>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000002308C742070> = 'Took: 15 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000002308C6DFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000002308C6DFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002308A45D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002308A45D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.25 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001E8C2052EB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001E8C2052EB0> = 'Took: 34 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001E8C2052070>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001E8C2052070> = 'Took: 34 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001E8C1FEFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001E8C1FEFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001E8BFD6D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001E8BFD6D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000020F84424DF0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000020F84424DF0> = 'Took: 38 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000020F844240F0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000020F844240F0> = 'Took: 38 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000020F843BF3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000020F843BF3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000020F8213D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000020F8213D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000021CDD484DF0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000021CDD484DF0> = 'Took: 34 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000021CDD4840F0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000021CDD4840F0> = 'Took: 34 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000021CDD41F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000021CDD41F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000021CDB19D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000021CDB19D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001BAF7232EF0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001BAF7232EF0> = 'Took: 34 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001BAF7232270>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001BAF7232270> = 'Took: 34 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001BAF71CFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001BAF71CFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001BAF4F5D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001BAF4F5D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000023780467AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000023780467AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000023780467AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000023780467AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000002378488F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000002378488F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002378260D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002378260D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001F4BA3D7AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001F4BA3D7AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001F4BA3D7AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001F4BA3D7AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001F4BE8EF3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001F4BE8EF3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001F4BC66D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001F4BC66D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.36 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001BB6D017AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001BB6D017AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001BB6D017AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001BB6D017AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001BB7143EB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001BB7143EB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001BB6F1BD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001BB6F1BD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.14 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002349D897AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000002349D897AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002349D897AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000002349D897AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000234A01AF3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000234A01AF3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002349DF2D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002349DF2D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.36 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000010397077AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000010397077AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000010397077AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000010397077AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001039B49EBA0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001039B49EBA0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001039921D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001039921D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.34 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+C:\Users\DELL\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+C:\Users\DELL\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+C:\Users\DELL\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import sqrt
+E     File "D:\Semester 4\PF\Assignments\a3\a03.py", line 24
+E       global i
+E              ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 1.46 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002FC449A7AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000002FC449A7AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002FC449A7AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000002FC449A7AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000002FC472BFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000002FC472BFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002FC4503D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002FC4503D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.35 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000206ECCB7AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000206ECCB7AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000206ECCB7AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000206ECCB7AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000206F10EFBA0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000206F10EFBA0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000206EEE5D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000206EEE5D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.23 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000028A77517AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000028A77517AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000028A77517AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000028A77517AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000028A7B93EB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000028A7B93EB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000028A796BD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000028A796BD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.13 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000026F4A127AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000026F4A127AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000026F4A127AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000026F4A127AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000026F4CA3EB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000026F4CA3EB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000026F4A7BD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000026F4A7BD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.22 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001BEE7007AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001BEE7007AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001BEE7007AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001BEE7007AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001BEEB50F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001BEEB50F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001BEE928D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001BEE928D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002482F587AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000002482F587AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000002482F587AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000002482F587AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000248339AF3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000248339AF3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000002483172D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000002483172D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.19 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+C:\Users\DELL\Anaconda3\lib\site-packages\_pytest\python.py:482: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+C:\Users\DELL\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+C:\Users\DELL\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:290: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:2: in <module>
+    from a03 import sqrt
+E     File "D:\Semester 4\PF\Assignments\a3\a03.py", line 58
+E       print("Took:", i, "steps")
+E                                ^
+E   TabError: inconsistent use of tabs and spaces in indentation
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.39 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001AA3D747AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001AA3D747AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001AA3D747AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001AA3D747AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001AA41B5F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001AA41B5F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001AA3F8DD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001AA3F8DD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.28 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001D0C3A77AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001D0C3A77AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001D0C3A77AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001D0C3A77AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001D0C7F9E3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001D0C7F9E3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001D0C5D1D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001D0C5D1D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001B839377AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001B839377AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001B839377AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001B839377AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001B83D86F3F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001B83D86F3F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001B83B5ED048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001B83B5ED048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001AE6C577AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x000001AE6C577AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x000001AE6C577AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x000001AE6C577AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x000001AE6EE90B70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x000001AE6EE90B70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x000001AE6CC0D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x000001AE6CC0D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000254327A7AB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000254327A7AB0> = ''.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000254327A7AB0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000254327A7AB0> = ''.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000254350DFB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000254350DFB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000025432E5D048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000025432E5D048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.04 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000237AD7F2E70>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000237AD7F2E70> = 'Took:  7 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000237AD7F2230>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x00000237AD7F2230> = 'Took:  1 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x00000237AD7903F0>('ascii')
+E        +      where <built-in method decode of bytes object at 0x00000237AD7903F0> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x00000237AB4FD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x00000237AB4FD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....F.                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000013CD77BDF70>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000013CD77BDF70> = 'Took: 8 steps\n'.startswith
+
+test_student.py:43: AssertionError
+===================== 1 failed, 5 passed in 0.13 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....F.                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x00000248AD442EB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x00000248AD442EB0> = 'Took: 8 steps\n'.startswith
+
+test_student.py:43: AssertionError
+===================== 1 failed, 5 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F...F.                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+E       assert 0.00025298411941854226 < 0.0001
+E        +  where 0.00025298411941854226 = abs((6.0002529841194185 - 6))
+E        +    where 6.0002529841194185 = sqrt(36, 1.0)
+
+test_student.py:25: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Took: 6 steps
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000029E4A88C530>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000029E4A88C530> = 'Took: 6 steps\n'.startswith
+
+test_student.py:43: AssertionError
+===================== 2 failed, 4 passed in 0.26 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py F...F.                                                   [100%]
+
+================================== FAILURES ===================================
+______________________________ test_sqrt_int_s0 _______________________________
+
+    def test_sqrt_int_s0():
+        v = 36
+>       assert abs(sqrt(v, 1.0) - 6) < epsilon
+E       assert 0.00025298411941854226 < 0.0001
+E        +  where 0.00025298411941854226 = abs((6.0002529841194185 - 6))
+E        +    where 6.0002529841194185 = sqrt(36, 1.0)
+
+test_student.py:25: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Took: 6 steps
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000023FDC0C7FB0>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000023FDC0C7FB0> = 'Took: 6 steps\n'.startswith
+
+test_student.py:43: AssertionError
+===================== 2 failed, 4 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.08 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.18 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.15 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ....FF                                                   [100%]
+
+================================== FAILURES ===================================
+________________________________ test_steps_s1 ________________________________
+
+    def test_steps_s1():
+        v, out = capture_output(sqrt)(36, 1.0)
+>       assert out.startswith("Took: 7 steps")
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000025DEADDEF70>('Took: 7 steps')
+E        +    where <built-in method startswith of str object at 0x0000025DEADDEF70> = 'Took: 8 steps\n'.startswith
+
+test_student.py:43: AssertionError
+________________________________ test_steps_s2 ________________________________
+
+    def test_steps_s2():
+        v, out = capture_output(sqrt)(36, 6.0)
+>       assert out.startswith(base64.b64decode(b'VG9vazogMSBzdGVwcw==').decode('ascii'))
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000025DEADDE5B0>('Took: 1 steps')
+E        +    where <built-in method startswith of str object at 0x0000025DEADDE5B0> = 'Took: 2 steps\n'.startswith
+E        +    and   'Took: 1 steps' = <built-in method decode of bytes object at 0x0000025DEAD7EB70>('ascii')
+E        +      where <built-in method decode of bytes object at 0x0000025DEAD7EB70> = b'Took: 1 steps'.decode
+E        +        where b'Took: 1 steps' = <function b64decode at 0x0000025DE8AFD048>(b'VG9vazogMSBzdGVwcw==')
+E        +          where <function b64decode at 0x0000025DE8AFD048> = base64.b64decode
+
+test_student.py:48: AssertionError
+===================== 2 failed, 4 passed in 0.13 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ..FF..                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_improve_guess_s1 ____________________________
+
+    def test_improve_guess_s1():
+        n = 36
+        g = 2.998
+>       assert abs(improve_guess(n, g) - 7.50300) < epsilon
+E       assert 10.53863888888889 < 0.0001
+E        +  where 10.53863888888889 = abs((18.04163888888889 - 7.503))
+E        +    where 18.04163888888889 = improve_guess(36, 2.998)
+
+test_student.py:34: AssertionError
+____________________________ test_improve_guess_s2 ____________________________
+
+    def test_improve_guess_s2():
+        n = 36
+        g = 12122.083
+>       assert abs(improve_guess(n, g) - 6061.04298) < epsilon
+E       assert 5874.680716111111 < 0.0001
+E        +  where 5874.680716111111 = abs((186.3622638888889 - 6061.04298))
+E        +    where 186.3622638888889 = improve_guess(36, 12122.083)
+
+test_student.py:39: AssertionError
+===================== 2 failed, 4 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.8.1, py-1.5.3, pluggy-0.7.1
+rootdir: D:\Semester 4\PF\Assignments\a3, inifile:
+plugins: timeout-1.3.2, remotedata-0.2.1, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.05 seconds ===========================
