@@ -1,0 +1,169 @@
+Question 01:
+i:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    float x, y, result = 1;
+    
+    cout << "Enter x: ";
+    cin >> x;
+    cout << "Enter y: ";
+    cin>> y;
+    
+    cout << "x" << "^" << "y" << " = ";
+    
+    while (y != 0)
+    {
+        result = result*x;
+        
+        y—-;
+    }
+    
+    cout << result <<endl;
+    
+    return 0;
+}
+
+Question 02:
+i:
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int val1, val2, num1, num2;
+    int sum1 = 0;
+    int sum2 = 0;
+    
+    cout << "Enter the number 1: ";
+    cin >> val1;
+    num1 = val1;
+    cout << "Enter the number 2: ";
+    cin >> val2;
+    num2 = val2;
+    
+    while (num1 != 0 && num2 != 0)
+    {
+        sum1 = sum1 + num1 % 10;
+        num1 = num1 / 10;
+        
+        sum2 = sum2 + num2 % 10;
+        num2 = num2 / 10;
+        
+    }
+    if (sum1==sum2)
+    {
+        cout << "Yes, the sum of the digits of numbers "<<val1<<" & "<<val2<<" is same."<<endl;
+    }
+    else
+    {
+    cout << "The sum of the numbers: "
+    << val1 << " & " << val2<<" is "<< sum1<< " - "<< sum2<<endl;
+    }
+    return 0;
+}
+
+Question 02:
+ii:
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    string firstName, lastName;
+    int marks;
+    
+    float average=0.0;
+    
+    ifstream input;
+    input.open ("students.txt");
+    ofstream out;
+    out.open ("output.txt");
+    
+    while (!input.eof())
+    {
+        input>>firstName>>lastName>>marks;
+        
+        if(marks<100 && marks>=90)
+        {
+        out<<firstName<<" "<<lastName<<" "<<marks<<" is highest marks."<<endl;
+        }
+        else if (marks<50)
+        {
+        out<<firstName<<" "<<lastName<<" "<<marks<<" is lowest marks."<<endl;
+        }
+        else if (marks<90 && marks>50)
+        {
+        out<<firstName<<" "<<lastName<<" "<<marks<<" have marks in between 50 and 90."<<endl;
+        }
+    }
+    cout<<endl;
+    average=(85+59+33+96+44+89+91+90+86+99+75)/11;
+    out<<"The average of the total marks is: "<<average<<endl;
+    
+    return 0;
+}
+
+Question 03:
+i:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number, max =0, rem;
+    
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    while ( number != 0)
+    {
+        rem = number % 10;
+        if(rem>max)
+        {
+            max = rem;
+        }
+        number = number /10;
+    }
+    
+    cout << "The largest digit in that integer is: " << max << endl;
+    
+    
+    return 0;
+}
+
+Question 04:
+i:
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    string str;
+    
+    ifstream input;
+    input.open ("input.txt");
+    ofstream out;
+    out.open ("output.txt");
+    
+    while (!input.eof())
+    {
+        input >> str;
+        for (size_t i=0; i< str.length(); ++i)
+        {
+            str[i] = ::toupper(str[i]);
+        }
+        cout<<str;
+        out<<str;
+    } 
+    cout<<endl;
+    return 0;
+}

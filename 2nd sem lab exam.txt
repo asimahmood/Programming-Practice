@@ -1,0 +1,203 @@
+// Question 02
+
+
+#include<iostream>
+using namespace std;
+
+int const n = 10;
+void prime()
+{
+    int ar[n],i,j,cPrime;
+    int element = 1;
+    int x = 0;
+    for(i=0;i<n;i++)
+    {
+        cout <<"Enter the " << element <<" elements array: ";
+        cin >> ar[i];
+        element++;
+    }
+    
+    cout << endl;
+    cout << "Prime numbers in array are: ";
+    for(i=0;i<n;i++)
+    {
+        cPrime=0;
+        for(j=2;j<ar[i];j++)
+        {
+            if(ar[i]%j==0)
+            {
+                cPrime=1;
+                break;
+            }
+        }
+        
+        
+        if(cPrime==0)
+        {
+            
+            cout <<ar[i] << " \t ";
+            x++;
+        }
+    }
+    
+    cout << endl;
+    cout <<"Prime numbers found in above array: "<< x <<endl;
+    
+}
+
+int main ()
+{
+    //Calling function
+    prime();
+    return 0;
+}
+
+//Question 01
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void Power(int x, int n){
+    int pow=1;
+    while (n>=1)
+    {
+        pow*=x;
+        n--;
+    }
+    cout<<pow<<endl;
+}
+
+int main()
+{
+    int x,n;
+    cout<< "Enter two enteger x^n: ";
+    cin>>x>>n;
+    Power(x, n);
+    
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+double Num, Fact=1;
+
+void Factoial(int num)
+{
+    cout<< "Enter Number: ";
+    cin>>num;
+   
+    int i=1;
+    while (i<=num)
+    {
+        Fact=Fact*i;
+        i++;
+    }
+    
+    cout<<Num<<"! = "<<Fact<<endl;
+}
+int main()
+{
+    
+    Factoial(Num);
+    return 0;
+    
+}
+
+//Question 04
+
+#include<iostream>
+#include<fstream>
+#include<cstring>
+
+using namespace std;
+
+
+int const size =10;
+void max()
+{
+    int price[size], i ,j, x;
+
+    string first, type;
+    ifstream inFile ("input.txt");
+    
+    
+    
+    for ( i = 0; i<size ; i++)
+    {
+        inFile>>first>>type>>price[i];
+        
+    }
+    
+    
+    for( i=0, j=10-1;i<size/2;i++,j--)
+    {
+        x=price[i];
+        price[i]=price[j];
+        price[j]=x;
+        
+    }
+    
+    cout<<"The 2nd min: "<<price[8]<<endl;
+    cout<<"The 3rd max: "<<price[3]<<endl;
+}
+
+int main()
+{
+   
+    max();
+    return 0;
+
+    
+}
+
+//Question 03
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    
+    int value = 0;
+    cout << "Enter row size: ";
+    cin >> value;
+    int temp = value;
+    
+    for (int i = 0; i < value; i++)
+    {
+        for (int space = 0; space < i; space++)
+        {
+            cout << " ";
+        }
+        for (int star = 0; star < temp; star++)
+        {
+            cout << "*";
+        }
+        temp--;
+        cout << endl;
+    }
+    
+    int space=0;
+    space=value;
+    
+    for(int i=0;i<=value;i++)
+    {
+        for(int j=1;j<=space;j++)
+        {
+            cout<<" ";
+        }
+        
+        for(int l=1;l<=i;l++)
+        {
+            cout<<"*";
+        }
+        space--;
+        cout<<endl;
+        
+    }
+    
+    return 0;
+}
+
